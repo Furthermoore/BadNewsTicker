@@ -74,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9279668256E1E5700494028 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9D779F7256E0F7B0042CBE6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +88,7 @@
 				A9D77A14256E0F7B0042CBE6 /* TickerViewTests */,
 				A9D77A1F256E0F7C0042CBE6 /* TickerViewUITests */,
 				A9D77A01256E0F7B0042CBE6 /* Products */,
+				A9279668256E1E5700494028 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +157,8 @@
 			dependencies = (
 			);
 			name = TickerView;
+			packageProductDependencies = (
+			);
 			productName = TickerView;
 			productReference = A9D77A00256E0F7B0042CBE6 /* TickerView.app */;
 			productType = "com.apple.product-type.application";
