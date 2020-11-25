@@ -46,5 +46,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DIGITALDREAM.ttf</string>
+		<string>DIGITALDREAMFAT.ttf</string>
+		<string>DIGITALDREAMFATNARROW.ttf</string>
+		<string>DIGITALDREAMFATSKEW.ttf</string>
+		<string>DIGITALDREAMFATSKEWNARROW.ttf</string>
+		<string>DIGITALDREAMNARROW.ttf</string>
+		<string>DIGITALDREAMSKEW.ttf</string>
+		<string>DIGITALDREAMSKEWNARROW.ttf</string>
+	</array>
 </dict>
 </plist>

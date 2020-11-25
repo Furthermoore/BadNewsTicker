@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A9279652256E122000494028 /* BadNewsScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9279651256E122000494028 /* BadNewsScraper.swift */; };
+		A9279680256E299700494028 /* DIGITALDREAM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967E256E298A00494028 /* DIGITALDREAM.ttf */; };
+		A9279681256E299700494028 /* DIGITALDREAMSKEWNARROW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967C256E298900494028 /* DIGITALDREAMSKEWNARROW.ttf */; };
+		A9279682256E299700494028 /* DIGITALDREAMFATNARROW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967B256E298900494028 /* DIGITALDREAMFATNARROW.ttf */; };
+		A9279683256E299700494028 /* DIGITALDREAMFATSKEWNARROW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9279679256E298900494028 /* DIGITALDREAMFATSKEWNARROW.ttf */; };
+		A9279684256E299700494028 /* DIGITALDREAMFAT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9279678256E298900494028 /* DIGITALDREAMFAT.ttf */; };
+		A9279685256E299700494028 /* DIGITALDREAMSKEW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967F256E298A00494028 /* DIGITALDREAMSKEW.ttf */; };
+		A9279686256E299700494028 /* DIGITALDREAMFATSKEW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967A256E298900494028 /* DIGITALDREAMFATSKEW.ttf */; };
+		A9279687256E299700494028 /* DIGITALDREAMNARROW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967D256E298A00494028 /* DIGITALDREAMNARROW.ttf */; };
 		A9D77A04256E0F7B0042CBE6 /* TickerViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D77A03256E0F7B0042CBE6 /* TickerViewApp.swift */; };
 		A9D77A06256E0F7B0042CBE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D77A05256E0F7B0042CBE6 /* ContentView.swift */; };
 		A9D77A08256E0F7B0042CBE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D77A07256E0F7B0042CBE6 /* Assets.xcassets */; };
@@ -35,6 +43,14 @@
 
 /* Begin PBXFileReference section */
 		A9279651256E122000494028 /* BadNewsScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadNewsScraper.swift; sourceTree = "<group>"; };
+		A9279678256E298900494028 /* DIGITALDREAMFAT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMFAT.ttf; sourceTree = "<group>"; };
+		A9279679256E298900494028 /* DIGITALDREAMFATSKEWNARROW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMFATSKEWNARROW.ttf; sourceTree = "<group>"; };
+		A927967A256E298900494028 /* DIGITALDREAMFATSKEW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMFATSKEW.ttf; sourceTree = "<group>"; };
+		A927967B256E298900494028 /* DIGITALDREAMFATNARROW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMFATNARROW.ttf; sourceTree = "<group>"; };
+		A927967C256E298900494028 /* DIGITALDREAMSKEWNARROW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMSKEWNARROW.ttf; sourceTree = "<group>"; };
+		A927967D256E298A00494028 /* DIGITALDREAMNARROW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMNARROW.ttf; sourceTree = "<group>"; };
+		A927967E256E298A00494028 /* DIGITALDREAM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAM.ttf; sourceTree = "<group>"; };
+		A927967F256E298A00494028 /* DIGITALDREAMSKEW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMSKEW.ttf; sourceTree = "<group>"; };
 		A9D77A00256E0F7B0042CBE6 /* TickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D77A03256E0F7B0042CBE6 /* TickerViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewApp.swift; sourceTree = "<group>"; };
 		A9D77A05256E0F7B0042CBE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,12 +97,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A9279677256E295B00494028 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A927967E256E298A00494028 /* DIGITALDREAM.ttf */,
+				A9279678256E298900494028 /* DIGITALDREAMFAT.ttf */,
+				A927967B256E298900494028 /* DIGITALDREAMFATNARROW.ttf */,
+				A927967A256E298900494028 /* DIGITALDREAMFATSKEW.ttf */,
+				A9279679256E298900494028 /* DIGITALDREAMFATSKEWNARROW.ttf */,
+				A927967D256E298A00494028 /* DIGITALDREAMNARROW.ttf */,
+				A927967F256E298A00494028 /* DIGITALDREAMSKEW.ttf */,
+				A927967C256E298900494028 /* DIGITALDREAMSKEWNARROW.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A9D779F7256E0F7B0042CBE6 = {
 			isa = PBXGroup;
 			children = (
 				A9D77A02256E0F7B0042CBE6 /* TickerView */,
 				A9D77A14256E0F7B0042CBE6 /* TickerViewTests */,
 				A9D77A1F256E0F7C0042CBE6 /* TickerViewUITests */,
+				A9279677256E295B00494028 /* Resources */,
 				A9D77A01256E0F7B0042CBE6 /* Products */,
 				A9279668256E1E5700494028 /* Frameworks */,
 			);
@@ -246,8 +278,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9279681256E299700494028 /* DIGITALDREAMSKEWNARROW.ttf in Resources */,
+				A9279685256E299700494028 /* DIGITALDREAMSKEW.ttf in Resources */,
+				A9279687256E299700494028 /* DIGITALDREAMNARROW.ttf in Resources */,
 				A9D77A0B256E0F7B0042CBE6 /* Preview Assets.xcassets in Resources */,
+				A9279683256E299700494028 /* DIGITALDREAMFATSKEWNARROW.ttf in Resources */,
+				A9279684256E299700494028 /* DIGITALDREAMFAT.ttf in Resources */,
+				A9279682256E299700494028 /* DIGITALDREAMFATNARROW.ttf in Resources */,
 				A9D77A08256E0F7B0042CBE6 /* Assets.xcassets in Resources */,
+				A9279680256E299700494028 /* DIGITALDREAM.ttf in Resources */,
+				A9279686256E299700494028 /* DIGITALDREAMFATSKEW.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
