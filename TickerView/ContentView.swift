@@ -44,7 +44,7 @@ struct ContentView: View {
             HStack(spacing: 30) {
                 ForEach((0 ..< 10).indices, id: \.self) { i in
                     Text("You'll see")
-                        .font(Font.custom("Digitaldream", size: 40))
+                        .font(Font.custom("DigitaldreamFatSkew", size: 40))
                 }
                 .border(Color.black)
             }

@@ -26,6 +26,7 @@
 		A9279686256E299700494028 /* DIGITALDREAMFATSKEW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967A256E298900494028 /* DIGITALDREAMFATSKEW.ttf */; };
 		A9279687256E299700494028 /* DIGITALDREAMNARROW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967D256E298A00494028 /* DIGITALDREAMNARROW.ttf */; };
 		A9A4A038256F4F6100687EA8 /* BadNewsScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9279651256E122000494028 /* BadNewsScraper.swift */; };
+		A9AD25A6256F98AB0041348C /* DIGITALDREAMFATSKEW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967A256E298900494028 /* DIGITALDREAMFATSKEW.ttf */; };
 		A9D77A04256E0F7B0042CBE6 /* TickerViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D77A03256E0F7B0042CBE6 /* TickerViewApp.swift */; };
 		A9D77A06256E0F7B0042CBE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D77A05256E0F7B0042CBE6 /* ContentView.swift */; };
 		A9D77A08256E0F7B0042CBE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D77A07256E0F7B0042CBE6 /* Assets.xcassets */; };
@@ -371,6 +372,7 @@
 			files = (
 				A902C3CF256EFBF900B3FDEB /* Assets.xcassets in Resources */,
 				A902C3ED256EFF5200B3FDEB /* DIGITALDREAM.ttf in Resources */,
+				A9AD25A6256F98AB0041348C /* DIGITALDREAMFATSKEW.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

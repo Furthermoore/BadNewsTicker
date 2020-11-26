@@ -33,7 +33,7 @@ class Provider: IntentTimelineProvider {
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         
         let currentDate = Date()
-        let refreshDate = Calendar.current.date(byAdding: .minute, value: 5, to: currentDate)!
+        let refreshDate = Calendar.current.date(byAdding: .second, value: 10, to: currentDate)!
         timelineCancellable = BadNewsScraper.getBadNews().map {
             Timeline(entries: [Entry(headline: $0)], policy: .after(refreshDate))
         }
@@ -41,21 +41,6 @@ class Provider: IntentTimelineProvider {
         .subscribe(on: queue)
         .receive(on: DispatchQueue.main)
         .sink(receiveValue: completion)
-        
-//        var entries: [BadNewsContent] = readContents()
-//
-//        let currentDate = Date()
-//        let interval = 5
-//        for index in 0 ..< entries.count {
-//            entries[index].date = Calendar.current.date(byAdding: .second,
-//                                                        value: index * interval, to: currentDate)!
-//        }
-        
-//
-//        let entries = [snapshotContent]
-//
-//        let timeline = Timeline(entries: entries, policy: .atEnd)
-//        completion(timeline)
     }
 }
 
@@ -82,9 +67,3 @@ struct BadNewsTicker: Widget {
     }
 }
 
-//struct BadNewsTicker_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BadNewsTickerEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
-//            .previewContext(WidgetPreviewContext(family: .systemSmall))
-//    }
-//}

@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Bad News</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,6 +22,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DIGITALDREAM.ttf</string>
+		<string>DIGITALDREAMFAT.ttf</string>
+		<string>DIGITALDREAMFATNARROW.ttf</string>
+		<string>DIGITALDREAMFATSKEW.ttf</string>
+		<string>DIGITALDREAMFATSKEWNARROW.ttf</string>
+		<string>DIGITALDREAMNARROW.ttf</string>
+		<string>DIGITALDREAMSKEW.ttf</string>
+		<string>DIGITALDREAMSKEWNARROW.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -45,17 +58,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>DIGITALDREAM.ttf</string>
-		<string>DIGITALDREAMFAT.ttf</string>
-		<string>DIGITALDREAMFATNARROW.ttf</string>
-		<string>DIGITALDREAMFATSKEW.ttf</string>
-		<string>DIGITALDREAMFATSKEWNARROW.ttf</string>
-		<string>DIGITALDREAMNARROW.ttf</string>
-		<string>DIGITALDREAMSKEW.ttf</string>
-		<string>DIGITALDREAMSKEWNARROW.ttf</string>
 	</array>
 </dict>
 </plist>
