@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A902C3C7256EFBF800B3FDEB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A902C3C6256EFBF800B3FDEB /* WidgetKit.framework */; };
+		A902C3C9256EFBF800B3FDEB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A902C3C8256EFBF800B3FDEB /* SwiftUI.framework */; };
+		A902C3CC256EFBF800B3FDEB /* BadNewsTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A902C3CB256EFBF800B3FDEB /* BadNewsTicker.swift */; };
+		A902C3CF256EFBF900B3FDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A902C3CE256EFBF900B3FDEB /* Assets.xcassets */; };
+		A902C3D1256EFBF900B3FDEB /* BadNewsTicker.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A902C3CD256EFBF800B3FDEB /* BadNewsTicker.intentdefinition */; };
+		A902C3D2256EFBF900B3FDEB /* BadNewsTicker.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A902C3CD256EFBF800B3FDEB /* BadNewsTicker.intentdefinition */; };
+		A902C3D6256EFBF900B3FDEB /* BadNewsTickerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A902C3C5256EFBF800B3FDEB /* BadNewsTickerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A902C3ED256EFF5200B3FDEB /* DIGITALDREAM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967E256E298A00494028 /* DIGITALDREAM.ttf */; };
+		A902C434256F06C300B3FDEB /* BadNewsTicketWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A902C433256F06C300B3FDEB /* BadNewsTicketWidgetView.swift */; };
 		A9279652256E122000494028 /* BadNewsScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9279651256E122000494028 /* BadNewsScraper.swift */; };
 		A9279680256E299700494028 /* DIGITALDREAM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967E256E298A00494028 /* DIGITALDREAM.ttf */; };
 		A9279681256E299700494028 /* DIGITALDREAMSKEWNARROW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967C256E298900494028 /* DIGITALDREAMSKEWNARROW.ttf */; };
@@ -16,6 +25,7 @@
 		A9279685256E299700494028 /* DIGITALDREAMSKEW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967F256E298A00494028 /* DIGITALDREAMSKEW.ttf */; };
 		A9279686256E299700494028 /* DIGITALDREAMFATSKEW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967A256E298900494028 /* DIGITALDREAMFATSKEW.ttf */; };
 		A9279687256E299700494028 /* DIGITALDREAMNARROW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967D256E298A00494028 /* DIGITALDREAMNARROW.ttf */; };
+		A9A4A038256F4F6100687EA8 /* BadNewsScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9279651256E122000494028 /* BadNewsScraper.swift */; };
 		A9D77A04256E0F7B0042CBE6 /* TickerViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D77A03256E0F7B0042CBE6 /* TickerViewApp.swift */; };
 		A9D77A06256E0F7B0042CBE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D77A05256E0F7B0042CBE6 /* ContentView.swift */; };
 		A9D77A08256E0F7B0042CBE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D77A07256E0F7B0042CBE6 /* Assets.xcassets */; };
@@ -25,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A902C3D3256EFBF900B3FDEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D779F8256E0F7B0042CBE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A902C3C4256EFBF800B3FDEB;
+			remoteInfo = BadNewsTickerExtension;
+		};
 		A9D77A12256E0F7B0042CBE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A9D779F8256E0F7B0042CBE6 /* Project object */;
@@ -41,7 +58,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A902C3D5256EFBF900B3FDEB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A902C3D6256EFBF900B3FDEB /* BadNewsTickerExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A902C3C5256EFBF800B3FDEB /* BadNewsTickerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BadNewsTickerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A902C3C6256EFBF800B3FDEB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A902C3C8256EFBF800B3FDEB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A902C3CB256EFBF800B3FDEB /* BadNewsTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadNewsTicker.swift; sourceTree = "<group>"; };
+		A902C3CD256EFBF800B3FDEB /* BadNewsTicker.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BadNewsTicker.intentdefinition; sourceTree = "<group>"; };
+		A902C3CE256EFBF900B3FDEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A902C3D0256EFBF900B3FDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A902C433256F06C300B3FDEB /* BadNewsTicketWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadNewsTicketWidgetView.swift; sourceTree = "<group>"; };
 		A9279651256E122000494028 /* BadNewsScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadNewsScraper.swift; sourceTree = "<group>"; };
 		A9279678256E298900494028 /* DIGITALDREAMFAT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMFAT.ttf; sourceTree = "<group>"; };
 		A9279679256E298900494028 /* DIGITALDREAMFATSKEWNARROW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMFATSKEWNARROW.ttf; sourceTree = "<group>"; };
@@ -51,6 +90,8 @@
 		A927967D256E298A00494028 /* DIGITALDREAMNARROW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMNARROW.ttf; sourceTree = "<group>"; };
 		A927967E256E298A00494028 /* DIGITALDREAM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAM.ttf; sourceTree = "<group>"; };
 		A927967F256E298A00494028 /* DIGITALDREAMSKEW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DIGITALDREAMSKEW.ttf; sourceTree = "<group>"; };
+		A9AD2594256F83480041348C /* TickerView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TickerView.entitlements; sourceTree = "<group>"; };
+		A9AD2595256F83940041348C /* BadNewsTickerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BadNewsTickerExtension.entitlements; sourceTree = "<group>"; };
 		A9D77A00256E0F7B0042CBE6 /* TickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D77A03256E0F7B0042CBE6 /* TickerViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewApp.swift; sourceTree = "<group>"; };
 		A9D77A05256E0F7B0042CBE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +107,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A902C3C2256EFBF800B3FDEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A902C3C9256EFBF800B3FDEB /* SwiftUI.framework in Frameworks */,
+				A902C3C7256EFBF800B3FDEB /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D779FD256E0F7B0042CBE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,9 +140,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A902C3CA256EFBF800B3FDEB /* BadNewsTicker */ = {
+			isa = PBXGroup;
+			children = (
+				A902C3CB256EFBF800B3FDEB /* BadNewsTicker.swift */,
+				A902C3CD256EFBF800B3FDEB /* BadNewsTicker.intentdefinition */,
+				A902C3CE256EFBF900B3FDEB /* Assets.xcassets */,
+				A902C3D0256EFBF900B3FDEB /* Info.plist */,
+				A902C433256F06C300B3FDEB /* BadNewsTicketWidgetView.swift */,
+			);
+			path = BadNewsTicker;
+			sourceTree = "<group>";
+		};
 		A9279668256E1E5700494028 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A902C3C6256EFBF800B3FDEB /* WidgetKit.framework */,
+				A902C3C8256EFBF800B3FDEB /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,10 +179,12 @@
 		A9D779F7256E0F7B0042CBE6 = {
 			isa = PBXGroup;
 			children = (
+				A9AD2595256F83940041348C /* BadNewsTickerExtension.entitlements */,
 				A9D77A02256E0F7B0042CBE6 /* TickerView */,
 				A9D77A14256E0F7B0042CBE6 /* TickerViewTests */,
 				A9D77A1F256E0F7C0042CBE6 /* TickerViewUITests */,
 				A9279677256E295B00494028 /* Resources */,
+				A902C3CA256EFBF800B3FDEB /* BadNewsTicker */,
 				A9D77A01256E0F7B0042CBE6 /* Products */,
 				A9279668256E1E5700494028 /* Frameworks */,
 			);
@@ -130,6 +196,7 @@
 				A9D77A00256E0F7B0042CBE6 /* TickerView.app */,
 				A9D77A11256E0F7B0042CBE6 /* TickerViewTests.xctest */,
 				A9D77A1C256E0F7C0042CBE6 /* TickerViewUITests.xctest */,
+				A902C3C5256EFBF800B3FDEB /* BadNewsTickerExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +204,7 @@
 		A9D77A02256E0F7B0042CBE6 /* TickerView */ = {
 			isa = PBXGroup;
 			children = (
+				A9AD2594256F83480041348C /* TickerView.entitlements */,
 				A9D77A03256E0F7B0042CBE6 /* TickerViewApp.swift */,
 				A9D77A05256E0F7B0042CBE6 /* ContentView.swift */,
 				A9D77A07256E0F7B0042CBE6 /* Assets.xcassets */,
@@ -176,6 +244,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A902C3C4256EFBF800B3FDEB /* BadNewsTickerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A902C3D9256EFBF900B3FDEB /* Build configuration list for PBXNativeTarget "BadNewsTickerExtension" */;
+			buildPhases = (
+				A902C3C1256EFBF800B3FDEB /* Sources */,
+				A902C3C2256EFBF800B3FDEB /* Frameworks */,
+				A902C3C3256EFBF800B3FDEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BadNewsTickerExtension;
+			productName = BadNewsTickerExtension;
+			productReference = A902C3C5256EFBF800B3FDEB /* BadNewsTickerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A9D779FF256E0F7B0042CBE6 /* TickerView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9D77A25256E0F7C0042CBE6 /* Build configuration list for PBXNativeTarget "TickerView" */;
@@ -183,10 +268,12 @@
 				A9D779FC256E0F7B0042CBE6 /* Sources */,
 				A9D779FD256E0F7B0042CBE6 /* Frameworks */,
 				A9D779FE256E0F7B0042CBE6 /* Resources */,
+				A902C3D5256EFBF900B3FDEB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A902C3D4256EFBF900B3FDEB /* PBXTargetDependency */,
 			);
 			name = TickerView;
 			packageProductDependencies = (
@@ -240,6 +327,9 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					A902C3C4256EFBF800B3FDEB = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					A9D779FF256E0F7B0042CBE6 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -269,11 +359,21 @@
 				A9D779FF256E0F7B0042CBE6 /* TickerView */,
 				A9D77A10256E0F7B0042CBE6 /* TickerViewTests */,
 				A9D77A1B256E0F7C0042CBE6 /* TickerViewUITests */,
+				A902C3C4256EFBF800B3FDEB /* BadNewsTickerExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A902C3C3256EFBF800B3FDEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A902C3CF256EFBF900B3FDEB /* Assets.xcassets in Resources */,
+				A902C3ED256EFF5200B3FDEB /* DIGITALDREAM.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D779FE256E0F7B0042CBE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,11 +408,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A902C3C1256EFBF800B3FDEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A902C434256F06C300B3FDEB /* BadNewsTicketWidgetView.swift in Sources */,
+				A902C3CC256EFBF800B3FDEB /* BadNewsTicker.swift in Sources */,
+				A902C3D1256EFBF900B3FDEB /* BadNewsTicker.intentdefinition in Sources */,
+				A9A4A038256F4F6100687EA8 /* BadNewsScraper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D779FC256E0F7B0042CBE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9D77A06256E0F7B0042CBE6 /* ContentView.swift in Sources */,
+				A902C3D2256EFBF900B3FDEB /* BadNewsTicker.intentdefinition in Sources */,
 				A9279652256E122000494028 /* BadNewsScraper.swift in Sources */,
 				A9D77A04256E0F7B0042CBE6 /* TickerViewApp.swift in Sources */,
 			);
@@ -337,6 +449,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A902C3D4256EFBF900B3FDEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A902C3C4256EFBF800B3FDEB /* BadNewsTickerExtension */;
+			targetProxy = A902C3D3256EFBF900B3FDEB /* PBXContainerItemProxy */;
+		};
 		A9D77A13256E0F7B0042CBE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A9D779FF256E0F7B0042CBE6 /* TickerView */;
@@ -350,6 +467,50 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A902C3D7256EFBF900B3FDEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BadNewsTickerExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U224YD7RJX;
+				INFOPLIST_FILE = BadNewsTicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danmoore.TickerView.BadNewsTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A902C3D8256EFBF900B3FDEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BadNewsTickerExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XQDU65W28S;
+				INFOPLIST_FILE = BadNewsTicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danmoore.TickerView.BadNewsTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A9D77A23256E0F7C0042CBE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,8 +630,10 @@
 		A9D77A26256E0F7C0042CBE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TickerView/TickerView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TickerView/Preview Content\"";
 				DEVELOPMENT_TEAM = U224YD7RJX;
@@ -491,8 +654,10 @@
 		A9D77A27256E0F7C0042CBE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TickerView/TickerView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TickerView/Preview Content\"";
 				DEVELOPMENT_TEAM = XQDU65W28S;
@@ -597,6 +762,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A902C3D9256EFBF900B3FDEB /* Build configuration list for PBXNativeTarget "BadNewsTickerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A902C3D7256EFBF900B3FDEB /* Debug */,
+				A902C3D8256EFBF900B3FDEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A9D779FB256E0F7B0042CBE6 /* Build configuration list for PBXProject "TickerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
