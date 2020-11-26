@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 import Intents
+import Combine
 
 let snapshotContent = BadNewsContent(headline: "You suck!")
 
@@ -16,7 +17,11 @@ struct BadNewsContent: Codable, TimelineEntry {
   let headline: String
 }
 
-struct Provider: IntentTimelineProvider {
+class Provider: IntentTimelineProvider {
+    
+    private var timelineCancellable: AnyCancellable?
+    private let queue = DispatchQueue(label: "com.danmoore.BadNewsTicker.network")
+    
     func placeholder(in context: Context) -> BadNewsContent {
         snapshotContent
     }
@@ -27,6 +32,16 @@ struct Provider: IntentTimelineProvider {
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         
+        let currentDate = Date()
+        let refreshDate = Calendar.current.date(byAdding: .minute, value: 5, to: currentDate)!
+        timelineCancellable = BadNewsScraper.getBadNews().map {
+            Timeline(entries: [Entry(headline: $0)], policy: .after(refreshDate))
+        }
+        .replaceError(with: Timeline(entries: [Entry(headline: "Errr")], policy: .after(refreshDate)))
+        .subscribe(on: queue)
+        .receive(on: DispatchQueue.main)
+        .sink(receiveValue: completion)
+        
 //        var entries: [BadNewsContent] = readContents()
 //
 //        let currentDate = Date()
@@ -36,11 +51,11 @@ struct Provider: IntentTimelineProvider {
 //                                                        value: index * interval, to: currentDate)!
 //        }
         
-        
-        let entries = [snapshotContent]
-      
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+//
+//        let entries = [snapshotContent]
+//
+//        let timeline = Timeline(entries: entries, policy: .atEnd)
+//        completion(timeline)
     }
 }
 
