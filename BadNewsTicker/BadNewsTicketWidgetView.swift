@@ -8,15 +8,29 @@
 import SwiftUI
 import UIKit
 import Combine
+import CoreML
 
 struct BadNewsTickerWidgetView : View {
     
     @Environment(\.widgetFamily) var family
     
     private let headline: String
+    
+    private let mlModel = try! IMDBReviewClassifier(configuration: MLModelConfiguration())
             
     init(headline: String) {
         self.headline = headline
+    }
+    
+    func colorFor(headline: String) -> Color {
+        let sentiment = (try? mlModel.prediction(text: headline))?.label ?? ""
+        if sentiment == "Negative" {
+            return .red
+        } else if sentiment == "Positive" {
+            return .green
+        } else {
+            return .white
+        }
     }
         
     var fontSize: CGFloat {
@@ -31,6 +45,7 @@ struct BadNewsTickerWidgetView : View {
     var body: some View {
         Text(headline)
             .font(Font.custom("DigitaldreamFatSkew", size: fontSize))
+            .foregroundColor(colorFor(headline: headline))
             .lineLimit(nil)
             .lineSpacing(20)
             .opacity(headline.isEmpty ? 0 : 1)

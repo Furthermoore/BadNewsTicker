@@ -40,8 +40,9 @@ struct BadNewsScraper {
                         .dropFirst()
                         .map { $0.replace(regex: "\"[\\s\\S]*$", with: "") }
                         .dropLast()
-                        .randomElement()
-                    promise(.success(result ?? ""))
+                        .randomElement() ?? ""
+                    
+                    promise(.success(result))
                 }
             }
             task.resume()

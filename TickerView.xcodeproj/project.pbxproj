@@ -26,6 +26,8 @@
 		A9279686256E299700494028 /* DIGITALDREAMFATSKEW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967A256E298900494028 /* DIGITALDREAMFATSKEW.ttf */; };
 		A9279687256E299700494028 /* DIGITALDREAMNARROW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967D256E298A00494028 /* DIGITALDREAMNARROW.ttf */; };
 		A9A4A038256F4F6100687EA8 /* BadNewsScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9279651256E122000494028 /* BadNewsScraper.swift */; };
+		A9A7AEF82571781D00BF15AE /* IMDBReviewClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9A7AEF72571781C00BF15AE /* IMDBReviewClassifier.mlmodel */; };
+		A9A7AEF92571781D00BF15AE /* IMDBReviewClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9A7AEF72571781C00BF15AE /* IMDBReviewClassifier.mlmodel */; };
 		A9AD25A6256F98AB0041348C /* DIGITALDREAMFATSKEW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A927967A256E298900494028 /* DIGITALDREAMFATSKEW.ttf */; };
 		A9D77A04256E0F7B0042CBE6 /* TickerViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D77A03256E0F7B0042CBE6 /* TickerViewApp.swift */; };
 		A9D77A06256E0F7B0042CBE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D77A05256E0F7B0042CBE6 /* ContentView.swift */; };
@@ -91,6 +93,7 @@
 		A927967D256E298A00494028 /* DIGITALDREAMNARROW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DIGITALDREAMNARROW.ttf; path = fonts/DIGITALDREAMNARROW.ttf; sourceTree = "<group>"; };
 		A927967E256E298A00494028 /* DIGITALDREAM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DIGITALDREAM.ttf; path = fonts/DIGITALDREAM.ttf; sourceTree = "<group>"; };
 		A927967F256E298A00494028 /* DIGITALDREAMSKEW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DIGITALDREAMSKEW.ttf; path = fonts/DIGITALDREAMSKEW.ttf; sourceTree = "<group>"; };
+		A9A7AEF72571781C00BF15AE /* IMDBReviewClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IMDBReviewClassifier.mlmodel; sourceTree = "<group>"; };
 		A9AD2594256F83480041348C /* TickerView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TickerView.entitlements; sourceTree = "<group>"; };
 		A9AD2595256F83940041348C /* BadNewsTickerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BadNewsTickerExtension.entitlements; sourceTree = "<group>"; };
 		A9D77A00256E0F7B0042CBE6 /* TickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				A9AD2595256F83940041348C /* BadNewsTickerExtension.entitlements */,
+				A9A7AEF72571781C00BF15AE /* IMDBReviewClassifier.mlmodel */,
 				A9D77A02256E0F7B0042CBE6 /* TickerView */,
 				A9D77A14256E0F7B0042CBE6 /* TickerViewTests */,
 				A9D77A1F256E0F7C0042CBE6 /* TickerViewUITests */,
@@ -414,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A7AEF92571781D00BF15AE /* IMDBReviewClassifier.mlmodel in Sources */,
 				A902C434256F06C300B3FDEB /* BadNewsTicketWidgetView.swift in Sources */,
 				A902C3CC256EFBF800B3FDEB /* BadNewsTicker.swift in Sources */,
 				A902C3D1256EFBF900B3FDEB /* BadNewsTicker.intentdefinition in Sources */,
@@ -425,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A7AEF82571781D00BF15AE /* IMDBReviewClassifier.mlmodel in Sources */,
 				A9D77A06256E0F7B0042CBE6 /* ContentView.swift in Sources */,
 				A902C3D2256EFBF900B3FDEB /* BadNewsTicker.intentdefinition in Sources */,
 				A9279652256E122000494028 /* BadNewsScraper.swift in Sources */,
