@@ -20,6 +20,20 @@ extension String {
         
         return copy
     }
+    
+    // doesn't cover all unicode entities, just predefined XML
+    // https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML
+    func decodeXMLEntities() -> String {
+      return self
+        .replace(regex: "&quot;", with: "\"")
+        .replace(regex: "&amp;", with: "&")
+        .replace(regex: "&apos;", with: "'")
+        // &apos; not universally used because not universally supported
+        // https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Entities_representing_special_characters_in_XHTML
+        .replace(regex: "&#39;", with: "'")
+        .replace(regex: "&lt;", with: "<")
+        .replace(regex: "&gt;", with: ">")
+    }
 }
 
 struct BadNewsScraper {
@@ -40,6 +54,7 @@ struct BadNewsScraper {
                         .dropFirst()
                         .map { $0.replace(regex: "\"[\\s\\S]*$", with: "") }
                         .dropLast()
+                        .map { $0.decodeXMLEntities() }
                         .randomElement() ?? ""
                     
                     promise(.success(result))
