@@ -7,8 +7,6 @@
 
 import Foundation
 import Combine
-import Foundation
-import Combine
 
 extension String {
     func replace(regex: String, with newString: String) -> String {
@@ -38,7 +36,7 @@ extension String {
 
 struct BadNewsScraper {
     static func getBadNews() -> Future<String, Error> {
-        let url = URL(string: "https://www.newser.com")!
+        let url = URL(string: "https://www.newser.com/category-grid/19/most-depressing-stories.html")!
         let urlSession = URLSession(configuration: .default)
         return Future { promise in
             let task = urlSession.dataTask(with: url) { data, _, error in
