@@ -37,7 +37,6 @@ extension String {
 }
 
 struct BadNewsScraper {
-    
     static func getBadNews() -> Future<String, Error> {
         let url = URL(string: "https://www.newser.com")!
         let urlSession = URLSession(configuration: .default)
@@ -54,14 +53,12 @@ struct BadNewsScraper {
                         .dropFirst()
                         .map { $0.replace(regex: "\"[\\s\\S]*$", with: "") }
                         .dropLast()
-                        .map { $0.decodeXMLEntities() }
+                        .map { $0.decodeXMLEntities() }[0..<10]
                         .randomElement() ?? ""
-                    
                     promise(.success(result))
                 }
             }
             task.resume()
         }
     }
-    
 }

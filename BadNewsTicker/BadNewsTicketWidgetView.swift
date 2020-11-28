@@ -46,6 +46,7 @@ struct BadNewsTickerWidgetView : View {
         Text(headline)
             .font(Font.custom("DigitaldreamFatSkew", size: fontSize))
             .foregroundColor(colorFor(headline: headline))
+            .multilineTextAlignment(.center)
             .lineLimit(nil)
             .lineSpacing(20)
             .opacity(headline.isEmpty ? 0 : 1)
