@@ -34,8 +34,9 @@ class Provider: IntentTimelineProvider {
         
         let currentDate = Date()
         let refreshDate = Calendar.current.date(byAdding: .second, value: 10, to: currentDate)!
+        
         timelineCancellable = BadNewsScraper.getBadNews().map {
-            Timeline(entries: [Entry(headline: $0)], policy: .after(refreshDate))
+            return Timeline(entries: [Entry(headline: $0)], policy: .after(refreshDate))
         }
         .replaceError(with: Timeline(entries: [Entry(headline: "Errr")], policy: .after(refreshDate)))
         .subscribe(on: queue)
@@ -56,8 +57,6 @@ struct BadNewsTickerEntryView : View {
 struct BadNewsTicker: Widget {
     let kind: String = "BadNewsTicker"
     
-    let scrubber = BadNewsScraper()
-
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             BadNewsTickerEntryView(entry: entry)

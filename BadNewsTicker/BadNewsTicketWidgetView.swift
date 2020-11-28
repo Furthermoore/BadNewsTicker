@@ -37,7 +37,7 @@ struct BadNewsTickerWidgetView : View {
         switch family {
         case .systemSmall: return 10
         case .systemMedium: return 20
-        case .systemLarge: return 30
+        case .systemLarge: return 25
         default: return 30
         }
     }
@@ -48,7 +48,8 @@ struct BadNewsTickerWidgetView : View {
             .foregroundColor(colorFor(headline: headline))
             .multilineTextAlignment(.center)
             .lineLimit(nil)
-            .lineSpacing(20)
+            .lineSpacing(8)
+            .padding()
             .opacity(headline.isEmpty ? 0 : 1)
     }
 }

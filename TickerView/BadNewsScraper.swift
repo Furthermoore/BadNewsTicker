@@ -46,6 +46,7 @@ struct BadNewsScraper {
                     promise(.failure(error))
                 } else {
                     let htmlString = String(decoding: data ?? Data(), as: UTF8.self)
+                    print(htmlString)
                     let result = htmlString
                         .replace(regex: "^[\\s\\S]*BEGIN: StoryGrid", with: "")
                         .replace(regex: "END: StoryGrid[\\s\\S]*$", with: "")
